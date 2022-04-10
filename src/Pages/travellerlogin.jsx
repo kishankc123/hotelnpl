@@ -1,6 +1,9 @@
 import React from 'react'
 import loginbg from '../Images/loginbg.svg'
 import logo from'../logo/logosmall.svg'
+import fb from'../Icon/fb.svg'
+import gl from'../Icon/gl.svg'
+
 
 
 const Travellerlogin = () => {
@@ -38,14 +41,13 @@ const Travellerlogin = () => {
         left: "360px",
         top: "118px",
         background: "#ffff",
-        border: "solid",
         borderRadius: "21.12px"        
     }
 
     const text ={
 
         top:"30px",
-        left:"27px",
+        left:"30px",
         position: "absolute",
         fontFamily: 'Karla',
         fontStyle: "normal",
@@ -53,7 +55,123 @@ const Travellerlogin = () => {
         fontSize: "38.016px",
         lineHeight: "44px",
         alignItems: "center",
-        color: "#000000"
+        color: "#000000",
+        letterSpacing: "0em",
+        textAlign: "left",
+        blend: "Pass through"
+
+
+    }
+
+    const email ={
+
+        position: "absolute",
+        width: "435px",
+        height: "58px",
+        left: "30px",
+        top: "101px",
+        right: "30px",
+        borderRadius: "10.56px" ,
+        border: "0.8448px solid #000000"
+
+    }
+
+    const password={
+        position: "absolute",
+        width: "435px",
+        height: "58px",
+        left: "30px",
+        top: "184px",
+        right: "30px",
+        borderRadius: "10.56px" ,
+        border: "0.8448px solid #000000"
+
+    }
+
+    const terms ={
+        position: "absolute",
+        width: "435px",
+        height: "58px",
+        left: "30px",
+        top: "280px",
+        right: "30px",
+        fontFamily: 'Karla',
+        fontStyle: "normal",
+        fontWeight: "500",
+        fontSize: "19px",
+        lineHeight: "130%",
+        alignItems: "center",
+        color: "#000000",
+        textAlign: "center"       
+        
+    }
+
+    const button={
+        position: "absolute",
+        width: "435px",
+        height: "58px",
+        left: "30px",
+        top: "380px",
+        right: "30px",
+        borderRadius: "10.56px" ,
+        border: "0.8448px solid #000000",
+        background:"#D8F1E4",
+        fontFamily: 'Karla',
+        fontStyle: "normal",
+        fontWeight: "500",
+        fontSize: "25px",
+        fontColor:"#FFFFFF"
+    }
+
+    const forgot={
+        position: "absolute",
+        width: "435px",
+        height: "73px",
+        left: "30px",
+        top: "460px",
+        right: "30px",
+        fontFamily: 'Karla',
+        fontStyle: "normal",
+        fontWeight: "500",
+        fontSize: "19px",
+        lineHeight: "130%",
+        alignItems: "center",
+        textAlign: "center"       
+
+        }
+
+    const icon1={
+        position: "absolute",
+        left: "215px",
+        top: "540px",
+        right: "260pxpx"
+    }
+
+    const icon2={
+        position: "absolute",
+        left: "260px",
+        top: "540px",
+        right: "260px"
+
+
+    }
+
+    const cc={
+        position: "absolute",
+        width: "435px",
+        height: "58px",
+        left: "30px",
+        top: "600px",
+        right: "30px",
+        fontFamily: 'Karla',
+        fontStyle: "normal",
+        fontWeight: "500",
+        fontSize: "13px",
+        lineHeight: "17px",
+        alignItems: "center",
+        color: "#000000",
+        alignItems: "center",
+        textAlign: "center"       
 
     }
 
@@ -66,7 +184,36 @@ const Travellerlogin = () => {
                 <div style={text}>
                         Sign in
                 </div>
+                <div>
+                <form>
+                    <input
+                     type={'email'} name="name" placeholder='Enter email' style={email}/>
+                    <input 
+                    type={'password'} name="password" placeholder='Enter password' style={password}/>
 
+                    <div style={terms} > <t/>OR<br/>
+                    By signing in, I agree to the Hotel Nepal Inc <label fontColor='blue'>Terms and Conditions </label>
+                    and <label >Privacy Statement.</label>
+                    </div>
+
+                    <button style={button}>Sign in</button>
+                </form>
+
+                <div style={forgot}>
+                    Forgot password?<br/>
+                    Don't have an account? Create one
+                    or continue with
+                </div>
+
+                <img src={fb}  alt="logo" style={icon1}/>  
+                <img src={gl}  alt="logo" style={icon2}/>  
+
+                <div style={cc}>
+                ©2022 HotelsNepal Inc. All rights reserved.
+                </div>
+
+
+                </div>
             </div>
         </div> 
 
